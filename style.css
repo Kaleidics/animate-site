@@ -93,10 +93,22 @@ section .wave.wave4 {
 
 .firstquarter-l {
     left: 25%;
+    visibility: hidden;
 }
 
 .thirdquarter-l {
     left: 75%;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .firstquarter-l {
+        visibility: visible;
+    }
+
+    .thirdquarter-l {
+        visibility: visible;
+    }
 }
 
 .center-l {
@@ -213,4 +225,3 @@ section .wave.wave4 {
         padding-bottom: 100px;
     }
 }
-    
