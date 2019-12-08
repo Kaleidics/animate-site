@@ -210,6 +210,7 @@ section .wave.wave4 {
 
 .heading-container {
     position: absolute;
+    margin-top: 90px;
     z-index: 9999;
     padding: 20px 20px 20px 20px;
     width: 100%;
@@ -223,5 +224,43 @@ section .wave.wave4 {
 @media screen and (min-width: 768px) {
     .heading-container {
         padding-bottom: 100px;
+        max-width: 575px;
     }
+
+    .heading-primary {
+        font-size: 42px;
+    }
+
+    .tagline {
+        font-size: 20px;
+    }
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.icons-container hr {
+    width: 15%;
+    margin-right: 15px;
+    border-radius: 3px;
+    border-color: rgba(142, 142, 144, 1);
+}
+
+.icons-container a {
+    margin-right: 15px;
+}
+
+.github {
+    width: 24px;
+}
+
+.linkedin {
+    width: 18px;
+}
+
+.mail {
+    width: 24px;
 }
