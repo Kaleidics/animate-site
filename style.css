@@ -342,7 +342,7 @@ section .wave.wave4 {
 @keyframes moveInLeft-slower {
     0% {
         opacity: 0;
-        transform: translateX(-3rem);
+        transform: translateX(-1.8rem);
     }
 
     100% {
