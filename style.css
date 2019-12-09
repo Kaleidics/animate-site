@@ -199,11 +199,13 @@ section .wave.wave4 {
 
     color: #fff;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tagline {
     line-height: 1.8;
-    color: rgba(142, 142, 144, 1);
+    color: rgb(103, 103, 106);
     font-family: 'Lora', serif;
     font-size: 16px;
 }
@@ -270,4 +272,117 @@ section .wave.wave4 {
 
 .mail {
     width: 26px;
+}
+
+.aboutme {
+    line-height: 1.8;
+    font-size: 12px;
+    color:rgb(103, 103, 106);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.heading-container-main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.animateTop-first {
+    animation: moveInTop 1s ease-out 0s backwards;
+}
+
+.animateLeft-second {
+    animation: moveInLeft 1.2s ease-out .6s backwards;
+}
+
+.animateLeft-third {
+    animation: moveInLeft 1.2s ease-out 1s backwards;
+}
+
+.animateLeft-four {
+    animation: moveInLeft 1s ease-out 1s backwards;
+}
+
+.animateBottom {
+    animation: moveInBottom 1s ease-out 1s backwards;
+}
+
+.animateLeft-five {
+    animation: moveInLeft-slower 1s ease-out 2s backwards;
+}
+
+.animateLeft-six {
+    animation: moveInLeft-slower 1s ease-out 2.1s backwards;
+}
+
+.animateLeft-seven {
+    animation: moveInLeft-slower 1s ease-out 2.2s backwards;
+}
+
+
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInLeft-slower {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
