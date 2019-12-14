@@ -251,7 +251,7 @@ section .wave.wave4 {
     margin-top: 35px;
 }
 
-.icons-container .separator {
+.separator {
     width: 15%;
     height: 2px;
     margin-right: 25px;
@@ -278,7 +278,7 @@ section .wave.wave4 {
 .aboutme {
     line-height: 1.8;
     font-size: 12px;
-    color:rgb(103, 103, 106);
+    color: rgb(103, 103, 106);
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -291,13 +291,12 @@ section .wave.wave4 {
     flex-direction: column-reverse;
 }
 
-
 .animateTop-first {
     animation: moveInTop 1s ease-out 0s backwards;
 }
 
 .animateLeft-second {
-    animation: moveInLeft 1.2s ease-out .6s backwards;
+    animation: moveInLeft 1.2s ease-out 0.6s backwards;
 }
 
 .animateLeft-third {
@@ -323,10 +322,6 @@ section .wave.wave4 {
 .animateLeft-seven {
     animation: moveInLeft-slower 1s ease-out 2.2s backwards;
 }
-
-
-
-
 
 @keyframes moveInLeft {
     0% {
@@ -389,7 +384,7 @@ section .wave.wave4 {
 }
 
 .project-section {
-    background-image: linear-gradient(-1deg, #F4F7F6 55%, #fff 100%);
+    background-image: linear-gradient(-1deg, #f4f7f6 55%, #fff 100%);
 }
 
 .project-section {
@@ -418,4 +413,67 @@ section .wave.wave4 {
     font-weight: 900;
     font-family: 'Merriweather', serif;
     color: rgb(33, 34, 38);
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.footer-bg {
+    position: absolute;
+    top: 0;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.footer {
+    position: relative;
+    color: white;
+}
+
+.short-height {
+    height: 600px !important;
+}
+
+.connect-message {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(0, 226, 182);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(0, 226, 182);
+    margin: 20px 0;
+    font-family: 'Merriweather', serif;
+}
+
+.sig-container {
+    width: 66%;
+    max-width: 200px;
+    margin: 40px 0;
+}
+
+.sig-container img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content {
+    padding: 200px 36px 0 36px;
+}
+
+.footer-text {
+    line-height: 1.8;
+    color: rgb(143, 143, 146);
+    font-family: 'Lora', serif;
+    margin: 20px 0;
+}
+
+.copyright-container {
+    
+    margin-top: 5%;
+color: rgb(143, 143, 146);
+font-family: 'Lora', serif;
+font-size: 13px;
+
 }
