@@ -6,7 +6,14 @@
 
 body {
     position: relative;
+    background-image: linear-gradient(to bottom, #fff 100vh, #f4f7f6, #fff 50%);
 }
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 section.darkness {
     position: relative;
     width: 100%;
@@ -27,7 +34,7 @@ section .wave {
 
 section .wave.wave1 {
     animation: animate 30s linear infinite;
-    z-index: 1000;
+    z-index: 99999;
     opacity: 1;
     animation-delay: 0s;
     bottom: 0;
@@ -384,16 +391,21 @@ section .wave.wave4 {
 }
 
 .project-section {
-    background-image: linear-gradient(-1deg, #f4f7f6 55%, #fff 100%);
+    
 }
 
 .project-section {
     padding: 20px;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .heading-secondary {
     display: flex;
     flex-direction: column;
+    max-width: 535px;
+margin: 0 auto;
+
 }
 
 .latest {
@@ -413,6 +425,16 @@ section .wave.wave4 {
     font-weight: 900;
     font-family: 'Merriweather', serif;
     color: rgb(33, 34, 38);
+}
+
+@media screen and (min-width: 768px) {
+    .latest {
+        font-size: 18px;
+    }
+
+    .projects-heading {
+        font-size: 36px;
+    }
 }
 
 .rotated {
@@ -476,4 +498,29 @@ color: rgb(143, 143, 146);
 font-family: 'Lora', serif;
 font-size: 13px;
 
+}
+
+.project-container-image {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-image {
+    width: 80%;
+    max-width: 640px;
+    box-shadow: 3px 5px 8px -1px rgba(71, 71, 71, 0.1);
+
+}
+
+.project-logo {
+    width: 32px;
+    height: 22px;
+    margin-top: auto;
+}
+
+.project-logo2 {
+    width: 32px;
+    height: 22px;
+    margin-top: auto;
 }
