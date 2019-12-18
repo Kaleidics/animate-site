@@ -420,10 +420,10 @@ section .wave.wave4 {
     margin: 0 auto;
 }
 
-.latest {
+.projects-sub-heading {
     line-height: 1.8;
     font-size: 12px;
-    color: rgb(103, 103, 106);
+    color: rgb(165, 166, 168);
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -437,6 +437,7 @@ section .wave.wave4 {
     font-weight: 900;
     font-family: 'Merriweather', serif;
     color: rgb(33, 34, 38);
+    margin: 10px 0 15px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -510,8 +511,11 @@ section .wave.wave4 {
     font-size: 13px;
 }
 
+.project-container {
+    margin: 80px 0;
+}
+
 .project-container-image {
-    margin: 60px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -522,11 +526,14 @@ section .wave.wave4 {
     box-shadow: 3px 5px 8px -1px rgba(71, 71, 71, 0.1);
     transition: all 0.4s ease;
     cursor: pointer;
+    border-radius: 3px;
 }
 
-.project-image:hover, .project-logo:hover, .project-logo2:hover {
-    transform: translate(0, -5px);
-    
+.project-image:hover,
+.project-logo:hover,
+.project-logo2:hover,
+.project-logo3:hover {
+    transform: translate(0, -10px);
 }
 
 .project-logo {
@@ -534,31 +541,33 @@ section .wave.wave4 {
     height: 22px;
     margin-top: auto;
     transition: all 0.4s ease;
-cursor: pointer;
-
+    cursor: pointer;
 }
 
 .project-logo2 {
-    width: 32px;
-    height: 22px;
+    width: 42px;
+    height: 36px;
     margin-top: auto;
     transition: all 0.4s ease;
-cursor: pointer;
+    cursor: pointer;
+}
 
+.project-logo3 {
+    width: 32px;
+    height: 32px;
+    margin-top: auto;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .small-arrow {
     display: inline-block;
     transition: all 0.4s ease;
-
 }
 
 .project-link:hover > .small-arrow {
-    animation: leftnRight .8s infinite;
-
+    animation: leftnRight 0.8s infinite;
 }
-
-
 
 .project-link {
     text-transform: uppercase;
@@ -569,11 +578,41 @@ cursor: pointer;
     font-size: 12px;
     text-decoration: none;
     letter-spacing: 3px;
+    margin-right: 20px;
+}
+
+.link-alt {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: 600;
 }
 
 
 @media screen and (min-width: 768px) {
-    .project-link {
+    .left-desktop {
         margin-left: 87.5px;
     }
+}
+
+.aboutme-section {
+    margin: 100px 0;
+}
+
+.about-line {
+    max-width: 535px;
+    margin: 0 auto;
+    color: rgb(103, 103, 106);
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.aboutme-links {
+    margin: 40px auto 0 auto;
+    max-width: 535px;
+}
+
+.aboutme-links .project-links {
+    margin-left: 0;
 }
